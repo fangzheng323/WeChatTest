@@ -12,6 +12,7 @@
 @interface WeChatViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) NSMutableArray *dataArr;
 @property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) UIRefreshControl *control;
 @end
 
 @implementation WeChatViewController
@@ -26,10 +27,33 @@
     self.tableView.tableFooterView = [UIView new];
     [self.view addSubview:self.tableView];
     
+    self.control = [[UIRefreshControl alloc] init];
+    
+    [self.control addTarget:self action:@selector(beg:) forControlEvents:UIControlEventValueChanged];
+    self.control.attributedTitle = [[NSAttributedString alloc] initWithString:@"我要上天啦"];
+    self.control.tintColor = [UIColor redColor];
+    self.tableView.refreshControl = self.control;
     
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if (![self.control isRefreshing]) {
+        [self.control beginRefreshing];
+    }else{
+        [self.control endRefreshing];
+    }
+}
+- (void)beg:(UIRefreshControl*)con
+{
+    [self performSelector:@selector(end) withObject:nil afterDelay:3];
+}
+- (void)end
+{
+    [self.control endRefreshing];
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 10;

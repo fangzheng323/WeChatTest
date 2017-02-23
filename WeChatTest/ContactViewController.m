@@ -7,6 +7,7 @@
 //
 
 #import "ContactViewController.h"
+#import "DrawViewController.h"
 
 @interface ContactViewController ()
 @property (nonatomic,strong) UIView *redView;
@@ -24,6 +25,19 @@
     self.redView.backgroundColor = [UIColor redColor];
     self.redView.multipleTouchEnabled = YES;
     [self.view addSubview:self.redView];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    button.frame = CGRectMake(self.view.frame.size.width-100, 100, 50,30);
+    [button addTarget:self action:@selector(drawView) forControlEvents:UIControlEventTouchUpInside];
+    button.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:button];
+}
+
+- (void)drawView
+{
+    DrawViewController *VC = [[DrawViewController alloc] init];
+    VC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

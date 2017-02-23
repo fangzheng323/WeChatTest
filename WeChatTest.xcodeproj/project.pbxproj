@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324509E51E5C1E1600EE8038 /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324509E41E5C1E1600EE8038 /* DrawViewController.m */; };
+		324509E81E5C1ED900EE8038 /* ResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 324509E71E5C1ED900EE8038 /* ResultView.m */; };
+		325A6BCD1E5578D900593A91 /* WXLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325A6BCB1E5578D900593A91 /* WXLoginViewController.m */; };
+		325A6BCE1E5578D900593A91 /* WXLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325A6BCC1E5578D900593A91 /* WXLoginViewController.xib */; };
+		325A6BD11E557C1200593A91 /* WXLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325A6BD01E557C1200593A91 /* WXLoginManager.m */; };
 		32762B8F1E45ACB700CF3D66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32762B8E1E45ACB700CF3D66 /* main.m */; };
 		32762B921E45ACB700CF3D66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32762B911E45ACB700CF3D66 /* AppDelegate.m */; };
 		32762B951E45ACB700CF3D66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32762B941E45ACB700CF3D66 /* ViewController.m */; };
@@ -36,6 +41,10 @@
 		3288F5EC1E541FE800C89FCB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3288F5EB1E541FE800C89FCB /* Security.framework */; };
 		3288F5EE1E54200B00C89FCB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3288F5ED1E54200B00C89FCB /* CFNetwork.framework */; };
 		328A2D871E48519D0061CDEC /* find@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 328A2D861E48519D0061CDEC /* find@2x.png */; };
+		32B4A1041E5E812A003B78CC /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4A1011E5E812A003B78CC /* UITableView+SDAutoTableViewCellHeight.m */; };
+		32B4A1051E5E812A003B78CC /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4A1031E5E812A003B78CC /* UIView+SDAutoLayout.m */; };
+		32B4A10C1E5E83BA003B78CC /* AutolayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4A10B1E5E83BA003B78CC /* AutolayoutViewController.m */; };
+		32B4A10F1E5E8471003B78CC /* LayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4A10E1E5E8471003B78CC /* LayoutCell.m */; };
 		32C2C21D1E54516D00DBE90F /* lkbubble1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32C2C2151E54516D00DBE90F /* lkbubble1.jpg */; };
 		32C2C21E1E54516D00DBE90F /* lkbubble2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32C2C2161E54516D00DBE90F /* lkbubble2.jpg */; };
 		32C2C21F1E54516D00DBE90F /* lkbubble3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32C2C2171E54516D00DBE90F /* lkbubble3.jpg */; };
@@ -47,6 +56,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		324509E31E5C1E1600EE8038 /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
+		324509E41E5C1E1600EE8038 /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
+		324509E61E5C1ED900EE8038 /* ResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultView.h; sourceTree = "<group>"; };
+		324509E71E5C1ED900EE8038 /* ResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultView.m; sourceTree = "<group>"; };
+		325A6BCA1E5578D900593A91 /* WXLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXLoginViewController.h; sourceTree = "<group>"; };
+		325A6BCB1E5578D900593A91 /* WXLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXLoginViewController.m; sourceTree = "<group>"; };
+		325A6BCC1E5578D900593A91 /* WXLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXLoginViewController.xib; sourceTree = "<group>"; };
+		325A6BCF1E557C1200593A91 /* WXLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXLoginManager.h; sourceTree = "<group>"; };
+		325A6BD01E557C1200593A91 /* WXLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXLoginManager.m; sourceTree = "<group>"; };
 		32762B8A1E45ACB700CF3D66 /* WeChatTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32762B8E1E45ACB700CF3D66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32762B901E45ACB700CF3D66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +109,15 @@
 		3288F5EB1E541FE800C89FCB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		3288F5ED1E54200B00C89FCB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		328A2D861E48519D0061CDEC /* find@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find@2x.png"; sourceTree = "<group>"; };
+		32B4A0FF1E5E812A003B78CC /* SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAutoLayout.h; sourceTree = "<group>"; };
+		32B4A1001E5E812A003B78CC /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		32B4A1011E5E812A003B78CC /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		32B4A1021E5E812A003B78CC /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		32B4A1031E5E812A003B78CC /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		32B4A10A1E5E83BA003B78CC /* AutolayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutViewController.h; sourceTree = "<group>"; };
+		32B4A10B1E5E83BA003B78CC /* AutolayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutViewController.m; sourceTree = "<group>"; };
+		32B4A10D1E5E8471003B78CC /* LayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutCell.h; sourceTree = "<group>"; };
+		32B4A10E1E5E8471003B78CC /* LayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutCell.m; sourceTree = "<group>"; };
 		32C2C2151E54516D00DBE90F /* lkbubble1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lkbubble1.jpg; sourceTree = "<group>"; };
 		32C2C2161E54516D00DBE90F /* lkbubble2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lkbubble2.jpg; sourceTree = "<group>"; };
 		32C2C2171E54516D00DBE90F /* lkbubble3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lkbubble3.jpg; sourceTree = "<group>"; };
@@ -126,6 +153,7 @@
 		32762B811E45ACB700CF3D66 = {
 			isa = PBXGroup;
 			children = (
+				32B4A0FE1E5E812A003B78CC /* SDAutoLayout */,
 				32762B8C1E45ACB700CF3D66 /* WeChatTest */,
 				32762B8B1E45ACB700CF3D66 /* Products */,
 				32849E551E4C335D009AB1B8 /* Frameworks */,
@@ -148,6 +176,8 @@
 				3288F5C41E53EE9C00C89FCB /* WechatAuthSDK.h */,
 				3288F5C51E53EE9C00C89FCB /* WXApi.h */,
 				3288F5C61E53EE9C00C89FCB /* WXApiObject.h */,
+				325A6BCF1E557C1200593A91 /* WXLoginManager.h */,
+				325A6BD01E557C1200593A91 /* WXLoginManager.m */,
 				32762BA41E45AF1E00CF3D66 /* UI */,
 				32762B901E45ACB700CF3D66 /* AppDelegate.h */,
 				32762B911E45ACB700CF3D66 /* AppDelegate.m */,
@@ -176,23 +206,10 @@
 		32762BA41E45AF1E00CF3D66 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				32762BA51E45AF3B00CF3D66 /* WeChatViewController.h */,
-				32762BA61E45AF3B00CF3D66 /* WeChatViewController.m */,
-				32762BA81E45AF7900CF3D66 /* ContactViewController.h */,
-				32762BA91E45AF7900CF3D66 /* ContactViewController.m */,
-				32762BAB1E45AF9300CF3D66 /* DiscoverViewController.h */,
-				32762BAC1E45AF9300CF3D66 /* DiscoverViewController.m */,
-				32762BAE1E45AFA600CF3D66 /* MyViewController.h */,
-				32762BAF1E45AFA600CF3D66 /* MyViewController.m */,
-				32762BB11E45BFA000CF3D66 /* BaseChatViewController.h */,
-				32762BB21E45BFA000CF3D66 /* BaseChatViewController.m */,
-				32762BB41E45C43100CF3D66 /* DetailViewController.h */,
-				32762BB51E45C43100CF3D66 /* DetailViewController.m */,
-				32762BB61E45C43100CF3D66 /* DetailViewController.xib */,
-				32849E501E4C0ED0009AB1B8 /* VideoViewController.h */,
-				32849E511E4C0ED0009AB1B8 /* VideoViewController.m */,
-				32849E5A1E4C4C5D009AB1B8 /* CustomPlayerView.h */,
-				32849E5B1E4C4C5D009AB1B8 /* CustomPlayerView.m */,
+				32B4A1061E5E82AD003B78CC /* main */,
+				32B4A1081E5E82C9003B78CC /* contact */,
+				32B4A1071E5E82BC003B78CC /* discover */,
+				32B4A1091E5E82F6003B78CC /* me */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -212,6 +229,74 @@
 				32849E561E4C335D009AB1B8 /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32B4A0FE1E5E812A003B78CC /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				32B4A0FF1E5E812A003B78CC /* SDAutoLayout.h */,
+				32B4A1001E5E812A003B78CC /* UITableView+SDAutoTableViewCellHeight.h */,
+				32B4A1011E5E812A003B78CC /* UITableView+SDAutoTableViewCellHeight.m */,
+				32B4A1021E5E812A003B78CC /* UIView+SDAutoLayout.h */,
+				32B4A1031E5E812A003B78CC /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
+			sourceTree = "<group>";
+		};
+		32B4A1061E5E82AD003B78CC /* main */ = {
+			isa = PBXGroup;
+			children = (
+				32762BA51E45AF3B00CF3D66 /* WeChatViewController.h */,
+				32762BA61E45AF3B00CF3D66 /* WeChatViewController.m */,
+				32762BB11E45BFA000CF3D66 /* BaseChatViewController.h */,
+				32762BB21E45BFA000CF3D66 /* BaseChatViewController.m */,
+				32762BB41E45C43100CF3D66 /* DetailViewController.h */,
+				32762BB51E45C43100CF3D66 /* DetailViewController.m */,
+				32762BB61E45C43100CF3D66 /* DetailViewController.xib */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		32B4A1071E5E82BC003B78CC /* discover */ = {
+			isa = PBXGroup;
+			children = (
+				32762BAB1E45AF9300CF3D66 /* DiscoverViewController.h */,
+				32762BAC1E45AF9300CF3D66 /* DiscoverViewController.m */,
+				32849E501E4C0ED0009AB1B8 /* VideoViewController.h */,
+				32849E511E4C0ED0009AB1B8 /* VideoViewController.m */,
+				32849E5A1E4C4C5D009AB1B8 /* CustomPlayerView.h */,
+				32849E5B1E4C4C5D009AB1B8 /* CustomPlayerView.m */,
+				32B4A10A1E5E83BA003B78CC /* AutolayoutViewController.h */,
+				32B4A10B1E5E83BA003B78CC /* AutolayoutViewController.m */,
+				32B4A10D1E5E8471003B78CC /* LayoutCell.h */,
+				32B4A10E1E5E8471003B78CC /* LayoutCell.m */,
+			);
+			name = discover;
+			sourceTree = "<group>";
+		};
+		32B4A1081E5E82C9003B78CC /* contact */ = {
+			isa = PBXGroup;
+			children = (
+				32762BA81E45AF7900CF3D66 /* ContactViewController.h */,
+				32762BA91E45AF7900CF3D66 /* ContactViewController.m */,
+				324509E31E5C1E1600EE8038 /* DrawViewController.h */,
+				324509E41E5C1E1600EE8038 /* DrawViewController.m */,
+				324509E61E5C1ED900EE8038 /* ResultView.h */,
+				324509E71E5C1ED900EE8038 /* ResultView.m */,
+			);
+			name = contact;
+			sourceTree = "<group>";
+		};
+		32B4A1091E5E82F6003B78CC /* me */ = {
+			isa = PBXGroup;
+			children = (
+				32762BAE1E45AFA600CF3D66 /* MyViewController.h */,
+				32762BAF1E45AFA600CF3D66 /* MyViewController.m */,
+				325A6BCA1E5578D900593A91 /* WXLoginViewController.h */,
+				325A6BCB1E5578D900593A91 /* WXLoginViewController.m */,
+				325A6BCC1E5578D900593A91 /* WXLoginViewController.xib */,
+			);
+			name = me;
 			sourceTree = "<group>";
 		};
 		32C2C2141E54516D00DBE90F /* pic */ = {
@@ -289,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32C2C21F1E54516D00DBE90F /* lkbubble3.jpg in Resources */,
+				325A6BCE1E5578D900593A91 /* WXLoginViewController.xib in Resources */,
 				32C2C21D1E54516D00DBE90F /* lkbubble1.jpg in Resources */,
 				32C2C2201E54516D00DBE90F /* lkbubble4.jpg in Resources */,
 				32762B9D1E45ACB700CF3D66 /* LaunchScreen.storyboard in Resources */,
@@ -314,14 +400,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				32849E521E4C0ED0009AB1B8 /* VideoViewController.m in Sources */,
+				325A6BCD1E5578D900593A91 /* WXLoginViewController.m in Sources */,
+				324509E51E5C1E1600EE8038 /* DrawViewController.m in Sources */,
 				32762BAA1E45AF7900CF3D66 /* ContactViewController.m in Sources */,
 				32762BAD1E45AF9300CF3D66 /* DiscoverViewController.m in Sources */,
+				32B4A1051E5E812A003B78CC /* UIView+SDAutoLayout.m in Sources */,
 				32762BB71E45C43100CF3D66 /* DetailViewController.m in Sources */,
 				32849E5C1E4C4C5D009AB1B8 /* CustomPlayerView.m in Sources */,
 				32762BA71E45AF3B00CF3D66 /* WeChatViewController.m in Sources */,
+				32B4A10C1E5E83BA003B78CC /* AutolayoutViewController.m in Sources */,
 				32762B951E45ACB700CF3D66 /* ViewController.m in Sources */,
+				325A6BD11E557C1200593A91 /* WXLoginManager.m in Sources */,
+				32B4A1041E5E812A003B78CC /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				32B4A10F1E5E8471003B78CC /* LayoutCell.m in Sources */,
 				32762B921E45ACB700CF3D66 /* AppDelegate.m in Sources */,
 				32762BB31E45BFA000CF3D66 /* BaseChatViewController.m in Sources */,
+				324509E81E5C1ED900EE8038 /* ResultView.m in Sources */,
 				32762B8F1E45ACB700CF3D66 /* main.m in Sources */,
 				32762BB01E45AFA600CF3D66 /* MyViewController.m in Sources */,
 			);

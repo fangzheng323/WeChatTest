@@ -12,8 +12,8 @@
 #import "DiscoverViewController.h"
 #import "MyViewController.h"
 
-#import "WXApi.h"
-#import "WXApiObject.h"
+//#import "WXApi.h"
+//#import "WXApiObject.h"
 @interface AppDelegate ()//<WXApiDelegate>
 
 @end
@@ -22,69 +22,69 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [self loadMainView];
-    
-    [WXApi registerApp:@"wxb5c6a53e7fe9a808"];//wxb5c6a53e7fe9a808
-    //向微信注册支持的文件类型
-    UInt64 typeFlag = MMAPP_SUPPORT_TEXT | MMAPP_SUPPORT_PICTURE | MMAPP_SUPPORT_LOCATION | MMAPP_SUPPORT_VIDEO |MMAPP_SUPPORT_AUDIO | MMAPP_SUPPORT_WEBPAGE | MMAPP_SUPPORT_DOC | MMAPP_SUPPORT_DOCX | MMAPP_SUPPORT_PPT | MMAPP_SUPPORT_PPTX | MMAPP_SUPPORT_XLS | MMAPP_SUPPORT_XLSX | MMAPP_SUPPORT_PDF;
-    
-    [WXApi registerAppSupportContentFlag:typeFlag];
+    [self loadMainView];//wxb5c6a53e7fe9a808
+//    
+//    [WXApi registerApp:@"wxb5c6a53e7fe9a808"];
+//    //向微信注册支持的文件类型
+//    UInt64 typeFlag = MMAPP_SUPPORT_TEXT | MMAPP_SUPPORT_PICTURE | MMAPP_SUPPORT_LOCATION | MMAPP_SUPPORT_VIDEO |MMAPP_SUPPORT_AUDIO | MMAPP_SUPPORT_WEBPAGE | MMAPP_SUPPORT_DOC | MMAPP_SUPPORT_DOCX | MMAPP_SUPPORT_PPT | MMAPP_SUPPORT_PPTX | MMAPP_SUPPORT_XLS | MMAPP_SUPPORT_XLSX | MMAPP_SUPPORT_PDF;
+//    
+//    [WXApi registerAppSupportContentFlag:typeFlag];
     return YES;
 }
 
--(void)onReq:(BaseReq*)req{
-    NSLog(@"onReq");
-}
-- (void)onResp:(BaseResp*)resp{
-    if([resp isKindOfClass:[SendMessageToWXResp class]]){//微信分享回调
-        SendMessageToWXResp *messageResp = (SendMessageToWXResp *)resp;
-        if (messageResp.errCode == -2) {
-            NSLog(@"用户取消分享");
-        }
-    }else if ([resp isKindOfClass:[SendAuthResp class]]){//微信登录回调
-        SendAuthResp *aresp = (SendAuthResp *)resp;
-        
-        /*
-         ErrCode ERR_OK = 0(用户同意)
-         ERR_AUTH_DENIED = -4（用户拒绝授权）
-         ERR_USER_CANCEL = -2（用户取消）
-         code    用户换取access_token的code，仅在ErrCode为0时有效
-         state   第三方程序发送时用来标识其请求的唯一性的标志，由第三方程序调用sendReq时传入，由微信终端回传，state字符串长度不能超过1K
-         lang    微信客户端当前语言
-         country 微信用户当前国家信息
-         */
-        
-        NSLog(@"aresp.errCode:%d",aresp.errCode);
-        
-        if (aresp.errCode== 0) {
-            NSLog(@"微信登录成功");
-        }else if (aresp.errCode == -2){
-            NSLog(@"用户取消登录");
-        }
-    }else if ([resp isKindOfClass:[PayResp class]]){//微信支付
-        PayResp *response = (PayResp *)resp;
-        NSLog(@"response.returnKey:%@",response.returnKey);
-        
-        if (response.errCode == WXSuccess) {
-            //服务器端查询支付通知或查询API返回的结果再提示成功
-            NSLog(@"微信支付成功");
-        }else if (response.errCode == WXErrCodeUserCancel){
-            NSLog(@"用户取消支付");
-        }else{//WXErrCodeCommon
-            NSLog(@"支付失败，retcode=%d",response.errCode);
-        }
-    }
-}
-
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
-{
-    return [WXApi handleOpenURL:url delegate:self];
-}
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
-
-{
-    return [WXApi handleOpenURL:url delegate:self];
-}
+//-(void)onReq:(BaseReq*)req{
+//    NSLog(@"onReq");
+//}
+//- (void)onResp:(BaseResp*)resp{
+//    if([resp isKindOfClass:[SendMessageToWXResp class]]){//微信分享回调
+//        SendMessageToWXResp *messageResp = (SendMessageToWXResp *)resp;
+//        if (messageResp.errCode == -2) {
+//            NSLog(@"用户取消分享");
+//        }
+//    }else if ([resp isKindOfClass:[SendAuthResp class]]){//微信登录回调
+//        SendAuthResp *aresp = (SendAuthResp *)resp;
+//        
+//        /*
+//         ErrCode ERR_OK = 0(用户同意)
+//         ERR_AUTH_DENIED = -4（用户拒绝授权）
+//         ERR_USER_CANCEL = -2（用户取消）
+//         code    用户换取access_token的code，仅在ErrCode为0时有效
+//         state   第三方程序发送时用来标识其请求的唯一性的标志，由第三方程序调用sendReq时传入，由微信终端回传，state字符串长度不能超过1K
+//         lang    微信客户端当前语言
+//         country 微信用户当前国家信息
+//         */
+//        
+//        NSLog(@"aresp.errCode:%d",aresp.errCode);
+//        
+//        if (aresp.errCode== 0) {
+//            NSLog(@"微信登录成功");
+//        }else if (aresp.errCode == -2){
+//            NSLog(@"用户取消登录");
+//        }
+//    }else if ([resp isKindOfClass:[PayResp class]]){//微信支付
+//        PayResp *response = (PayResp *)resp;
+//        NSLog(@"response.returnKey:%@",response.returnKey);
+//        
+//        if (response.errCode == WXSuccess) {
+//            //服务器端查询支付通知或查询API返回的结果再提示成功
+//            NSLog(@"微信支付成功");
+//        }else if (response.errCode == WXErrCodeUserCancel){
+//            NSLog(@"用户取消支付");
+//        }else{//WXErrCodeCommon
+//            NSLog(@"支付失败，retcode=%d",response.errCode);
+//        }
+//    }
+//}
+//
+//- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+//{
+//    return [WXApi handleOpenURL:url delegate:self];
+//}
+//- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+//
+//{
+//    return [WXApi handleOpenURL:url delegate:self];
+//}
 
 
 - (void)loadMainView
